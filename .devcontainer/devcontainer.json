@@ -1,0 +1,21 @@
+{
+  "name": "Template",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "latest"
+    }
+  },
+  "features": {
+    "ghcr.io/kevinbonnoron/features/pocketbase:latest": {},
+    "ghcr.io/skriptfabrik/devcontainer-features/mailpit:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "biomejs.biome"
+      ]
+    }
+  },
+  "postCreateCommand": "bunx lefthook install"
+}
