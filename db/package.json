@@ -1,0 +1,15 @@
+{
+  "name": "db",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "bun run ./scripts/dev.ts",
+    "migrate:collections": "./pocketbase/bin/pocketbase --dir ./pocketbase/pb_data migrate collections"
+  },
+  "dependencies": {
+    "fflate": "^0.8.2",
+    "pocketbase": "0.26.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Template",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "latest"
+    }
+  },
+  "features": {
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "biomejs.biome"
+      ]
+    }
+  },
+  "postCreateCommand": "bunx lefthook install"
+}
